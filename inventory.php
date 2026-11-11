@@ -8,7 +8,7 @@ require_login();
 $search = trim($_GET['q'] ?? '');
 
 $currentPage = max(1, (int) ($_GET['page'] ?? 1));
-$productsPerPage = 10;
+$inventoryPerPage = 10;
 $offset = ($currentPage - 1) * $productsPerPage;
 
 $where = '';
@@ -35,7 +35,7 @@ $totalPages = max(
     (int) ceil($totalProducts / $productsPerPage)
 );
 
-$productStmt = $pdo->prepare("
+$inventoryStmt = $pdo->prepare("
     SELECT p.*, u.username
     FROM products p
     LEFT JOIN users u ON u.id = p.created_by
