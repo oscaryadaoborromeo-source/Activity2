@@ -62,7 +62,7 @@ require 'includes/header.php';
     </li>
 
     <li>
-        Total Inventory Value:
+        Total Products Value:
         <b>₱<?= number_format((float) $stats['value'], 2) ?></b>
     </li>
 
