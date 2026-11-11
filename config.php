@@ -1,6 +1,6 @@
 <?php
 $DB_HOST = 'localhost';
-$DB_NAME = 'product_management_system';
+$DB_NAME = 'inventory_management_system';
 $DB_USER = 'root';
 $DB_PASS = '';
 
