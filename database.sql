@@ -2,7 +2,7 @@ CREATE DATABASE IF NOT EXISTS product_management_system
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
 
-USE product_management_system;
+USE inventory_management_system;
 
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
